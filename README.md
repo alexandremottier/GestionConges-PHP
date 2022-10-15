@@ -53,7 +53,7 @@ $rttparmois = 0.75; // Nombre de RTT par mois (pour calculer les acquis de l'ann
 $cpparmois = 2.0833333333; // Nombre de RTT par mois (pour calculer les acquis de l'année suivante)
 ```
 
-## II. Utilisation de l'Utilitaire
+## II. Utilisation de l'utilitaire
 
 Après avoir procédé à la configuration de l'utilitaire, nous allons aborder son utilisation (il est très simpliste).
 
@@ -61,7 +61,7 @@ Après avoir procédé à la configuration de l'utilitaire, nous allons aborder 
 
 Sur cette pages, 3 choses sont affichées :
 
-- Un tableau contenant les congés que vous avez saisis avec les dates, le nombre de jours et la nature (le type). Il y a également un bouton Supprimer sur chaque ligne afin de procéder aux ajustements dont vous aurez besoin, mais aussi supprimer la base au début d'une nouvelle année.
+- Un tableau contenant les congés que vous avez saisis avec les dates, le nombre de jours et la nature (le type). Il y a également un bouton Supprimer sur chaque ligne afin de procéder aux ajustements dont vous aurez besoin, mais aussi supprimer les lignes obsolètes au début d'une nouvelle année (le système n'est pas capable de faire le vide automatiquement).
 - Un tableau indiquant le solde de congés ou RTT restants selon les paramètres saisis dans `config.php` et les jours déjà saisis.
 - Un tableau indiquant le cumul pour année suivante, qui se base également sur `config.php`.
 
@@ -70,7 +70,7 @@ Le système prend en compte les congés avec les dates suivantes :
 - RTT : 1er janvier au 31 décembre
 - Congés payés : 1er juin au 31 mai
 
-En cas de nécessité d'adaptation, ne pas hésiter à [ouvrir une issue](https://github.com/alexandremottier/GestionConges-PHP/issues/new)
+En cas de nécessité d'adaptation, ne pas hésiter à [ouvrir une issue](https://github.com/alexandremottier/GestionConges-PHP/issues/new).
 
 ### 2. La page de saisie
 
@@ -83,4 +83,6 @@ Sur cette page, un tableau vous demandant de saisir des informations sur vos con
 
 ATTENTION : Pour la saisie du nombre de jour, le séparateur décimal est le point `.` et non la virgule `,`.
 
-Vous voilà maintenant prêt à utiliser cet utilitaire de gestion des congés ! Faites-en bon usage ! ;-)
+Vous voilà maintenant prêt à utiliser cet utilitaire de gestion des congés !
+
+Faites-en bon usage ! ;-)
