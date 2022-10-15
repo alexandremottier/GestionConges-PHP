@@ -30,7 +30,7 @@ $result = $conn->query($sql);
       <td><b>Date début</b></td>
       <td><b>Date fin</b></td>
       <td><b>Durée</b></td>
-      <td><b>Type de congé</b></td>
+      <td><b>Nature du congé</b></td>
       <td><b>Suppression</b></td>
     </tr>
 <?php

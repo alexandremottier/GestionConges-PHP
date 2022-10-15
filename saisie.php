@@ -22,7 +22,7 @@
     <input type="date" id="datefin" name="datefin"><br>
     <label for="nbjours">Nombre de jours :</label><br>
     <input type="text" id="nbjours" name="nbjours"><br><br>
-    <label for="nbjours">Type de congés :</label><br>
+    <label for="nbjours">Nature du congé :</label><br>
     <select name="type">
          <option value="RTT" stud_name="sre">RTT</option>
          <option value="CP" stud_name="sam">Congé payé</option>
