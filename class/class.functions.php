@@ -3,7 +3,7 @@
   //require('config.php');
 
   function soldertt($table, $rttparan, $conn){
-    $resultrtt = mysqli_query($conn, "SELECT SUM(nbjours) AS decomptertt FROM $table WHERE type='RTT' AND datedebut LIKE ");
+    $resultrtt = mysqli_query($conn, "SELECT SUM(nbjours) AS decomptertt FROM $table WHERE type='RTT'");
     $rowrtt = mysqli_fetch_assoc($resultrtt);
     $sumrtt = $rowrtt['decomptertt'];
     $rtt = ($rttparan - $sumrtt);
