@@ -13,7 +13,7 @@
 <body>
   <h1>Gestion des congés - Saisie</h1>
   <a href="index.php">Afficher les congés</a><br><br>
-  <form class="generated-form"  method="POST" action="class.ajout.php"  target="_self">
+  <form class="generated-form"  method="POST" action="class/class.ajout.php"  target="_self">
   <fieldset>
     <legend> Saisie de congés </legend>
     <label for="datedebut">Date de début :</label><br>
