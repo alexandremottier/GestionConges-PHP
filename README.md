@@ -86,3 +86,7 @@ ATTENTION : Pour la saisie du nombre de jour, le séparateur décimal est le poi
 Vous voilà maintenant prêt à utiliser cet utilitaire de gestion des congés !
 
 Faites-en bon usage ! ;-)
+
+## III. DÉMO 
+
+[Accéder à la démo](https://demo.am-networks.fr/GestionConges-PHP)
