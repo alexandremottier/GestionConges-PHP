@@ -51,6 +51,9 @@ $conn->close();
 ?>
 </tbody>
 </table>
+<br>
+  <a href="class/class.clearcp.php">Supprimer les congés payés</a>
+  <a href="class/class.clearrtt.php">Supprimer les RTT</a>
 <br><br>
 <?php require('solde.php') ?>
 </body>
