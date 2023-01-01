@@ -1,4 +1,5 @@
 <?php
+require('class.sqlconnect.php');
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 $mysqli->set_charset("utf8");
 $req = "DELETE FROM $table WHERE type = 'cp' ;";
