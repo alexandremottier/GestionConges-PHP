@@ -53,8 +53,8 @@ $conn->close();
 </tbody>
 </table>
 <br>
-  <a href="class/class.clearcp.php" class="button">Supprimer les congés payés</a>
-  <a href="class/class.clearrtt.php" class="button">Supprimer les RTT</a>
+<button onclick="window.location.href='class/class.clearcp.php'" class="button">Supprimer les congés payés</button>
+<button onclick="window.location.href='class/class.clearrtt.php'" class="button">Supprimer les RTT</button>
 <br><br>
 <?php require('solde.php') ?>
 </body>
