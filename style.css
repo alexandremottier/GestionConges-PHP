@@ -2,6 +2,7 @@ button {
     padding: 10px 20px;
     background-color: blue;
     color: white;
+    !important;
 }
 table,
 td {
