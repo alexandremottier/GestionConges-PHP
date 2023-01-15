@@ -43,7 +43,7 @@ if ($result->num_rows > 0) {
     $datefin = date("d/m/Y", strtotime($findate));
     $nombrejours = $row["nbjours"];
     $link = 'class/class.remove.php?datedebut=" . $row["datedebut"] . "&datefin=" . $row["datefin"]. "'
-    echo "<tr><td> " . $datedebut. " </td><td> " . $datefin. " </td><td> " . $nombrejours . " jour(s) </td><td> " . $row["type"] . " </td><td><button onclick="window.location.href=$link">Supprimer la ligne</button></td></tr>";
+    echo "<tr><td> " . $datedebut. " </td><td> " . $datefin. " </td><td> " . $nombrejours . " jour(s) </td><td> " . $row["type"] . " </td><td><button onclick="window.location.href='class/class.remove.php?datedebut=" . $row["datedebut"] . "&datefin=" . $row["datefin"]. "'">Supprimer la ligne</button></td></tr>";
 
   }
 } else {
@@ -54,8 +54,8 @@ $conn->close();
 </tbody>
 </table>
 <br>
-<button onclick="window.location.href='class/class.clearcp.php'" class="button">Supprimer les congés payés</button>
-<button onclick="window.location.href='class/class.clearrtt.php'" class="button">Supprimer les RTT</button>
+<button onclick="window.location.href='class/class.clearcp.php'">Supprimer les congés payés</button>
+<button onclick="window.location.href='class/class.clearrtt.php'">Supprimer les RTT</button>
 <br><br>
 <?php require('solde.php') ?>
 </body>
