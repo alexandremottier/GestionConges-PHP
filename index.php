@@ -13,7 +13,7 @@
 <body>
 <h1>Gestion des congés - Affichage</h1>
 <h2>Année en cours : <?php echo date('Y'); ?></h2>
-<a href="saisie.php" class="button">Saisir des congés</a>
+<button onclick="window.location.href='saisie.php'">Saisir des congés</button>
 <br><br>
 <?php
 $sql = "SELECT * FROM $table";
