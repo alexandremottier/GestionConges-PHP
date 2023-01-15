@@ -8,10 +8,10 @@ tfoot {
     background-color: #1D4699;
     color: #fff;
 }
-href,
 a.button {
     padding: 10px 20px;
     background-color: blue;
     color: white;
     text-decoration: none;
+    !important;
 }
