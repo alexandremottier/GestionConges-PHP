@@ -42,7 +42,8 @@ if ($result->num_rows > 0) {
     $findate = str_replace('-"', '/', $row["datefin"]);
     $datefin = date("d/m/Y", strtotime($findate));
     $nombrejours = $row["nbjours"];
-    echo "<tr><td> " . $datedebut. " </td><td> " . $datefin. " </td><td> " . $nombrejours . " jour(s) </td><td> " . $row["type"] . " </td><td><button onclick="window.location.href='class/class.remove.php?datedebut=" . $row["datedebut"] . "&datefin=" . $row["datefin"]. "'" class="button">Supprimer la ligne</button></td></tr>";
+    $link = 'class/class.remove.php?datedebut=" . $row["datedebut"] . "&datefin=" . $row["datefin"]. "';
+    echo "<tr><td> " . $datedebut. " </td><td> " . $datefin. " </td><td> " . $nombrejours . " jour(s) </td><td> " . $row["type"] . " </td><td><button onclick="window.location.href=$link" class="button">Supprimer la ligne</button></td></tr>";
 
   }
 } else {
