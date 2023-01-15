@@ -39,12 +39,6 @@ require('config.php');
   </thead>
   <tbody>
     <tr>
-      <td>RTT</td>
-
-      <td><?php echo cumuln1rtt($rttparmois); ?> jour(s)</td>
-      <td>Entre en vigueur le : 1er janvier <?php anneeplus(); ?></td>
-    </tr>
-    <tr>
       <td>Congés payés</td>
       <td><?php echo cumuln1cp($cpparmois); ?> jour(s)</td>
       <td>Entre en vigueur le : 1er juin <?php echo annee(); ?></td>

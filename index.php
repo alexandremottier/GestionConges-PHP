@@ -13,7 +13,7 @@
 <body>
 <h1>Gestion des congés - Affichage</h1>
 <h2>Année en cours : <?php echo date('Y'); ?></h2>
-<a href="saisie.php">Saisir des congés</a>
+<a href="saisie.php" class="button">Saisir des congés</a>
 <br><br>
 <?php
 $sql = "SELECT * FROM $table";
@@ -42,7 +42,7 @@ if ($result->num_rows > 0) {
     $findate = str_replace('-"', '/', $row["datefin"]);
     $datefin = date("d/m/Y", strtotime($findate));
     $nombrejours = $row["nbjours"];
-    echo "<tr><td> " . $datedebut. " </td><td> " . $datefin. " </td><td> " . $nombrejours . " jour(s) </td><td> ". $row["type"]." </td><td><a href=\"class/class.remove.php?datedebut=" . $row["datedebut"] . "&datefin=" . $row["datefin"]. "\">Supprimer la ligne</a></td></tr>";
+    echo "<tr><td> " . $datedebut. " </td><td> " . $datefin. " </td><td> " . $nombrejours . " jour(s) </td><td> ". $row["type"]." </td><td><a href=\"class/class.remove.php?datedebut=" . $row["datedebut"] . "&datefin=" . $row["datefin"]. "\" class="button">Supprimer la ligne</a></td></tr>";
   }
 } else {
   echo "<tr colspan='4'><td>Pas de résultat</td></tr>";
@@ -52,8 +52,8 @@ $conn->close();
 </tbody>
 </table>
 <br>
-  <a href="class/class.clearcp.php">Supprimer les congés payés</a>
-  <a href="class/class.clearrtt.php">Supprimer les RTT</a>
+  <a href="class/class.clearcp.php" class="button">Supprimer les congés payés</a>
+  <a href="class/class.clearrtt.php" class="button">Supprimer les RTT</a>
 <br><br>
 <?php require('solde.php') ?>
 </body>
